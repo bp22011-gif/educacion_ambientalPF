@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Participación Comunitaria - Educación Ambiental</title>
+
+<style>
+:root{
+  --primary:#0E5E34;
+  --accent:#A3D977;
+  --bg:#F3F6E5;
+  --muted:#4D8C9E;
+  --maxw:1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Inter, system-ui, Arial;
+  background:var(--bg);
+  color:#153;
+  line-height:1.6;
+}
+
+/* Layout */
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:2rem;
+}
+.card{
+  background:white;
+  padding:1.4rem;
+  border-radius:10px;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+.small{font-size:.92rem;color:#345}
+
+/* Header */
+.header{
+  background:white;
+  border-radius:10px;
+  padding:.9rem 1.2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  text-decoration:none;
+  color:var(--primary);
+}
+.logo img{
+  width:56px;
+  height:56px;
+  border-radius:8px;
+}
+.site-title{font-weight:700;font-size:1rem}
+.site-sub{font-size:.8rem;color:var(--muted);font-weight:600}
+
+/* Menu */
+.nav{display:flex;gap:.6rem;align-items:center}
+.nav-btn{
+  background:transparent;
+  border:none;
+  padding:.6rem .9rem;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  color:#123;
+}
+.nav-btn:hover{
+  background:rgba(14,94,52,0.06);
+}
+
+/* Mega menu */
+.mega{position:relative}
+.mega-panel{
+  position:absolute;
+  left:0;
+  top:110%;
+  background:white;
+  padding:1rem;
+  border-radius:10px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:.6rem;
+  min-width:520px;
+  z-index:999;
+  box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+.mega-link{
+  display:block;
+  padding:.5rem .6rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  color:#123;
+}
+.mega-link:hover{
+  background:linear-gradient(90deg, rgba(163,217,119,.18), rgba(77,140,158,.1));
+}
+
+/* Page */
+h1,h2{color:var(--primary)}
+.hero-img{
+  width:100%;
+  margin:1rem 0;
+  border-radius:10px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+
+/* Lists */
+.list{margin-left:1rem}
+
+/* Buttons */
+.btn-back{
+  background:var(--primary);
+  color:white;
+  padding:.55rem 1rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn-back:hover{opacity:.9}
+
+/* Footer */
+.footer{
+  margin-top:2rem;
+  padding:1rem;
+  border-radius:10px;
+  background:linear-gradient(90deg, rgba(14,94,52,.07), rgba(77,140,158,.05));
+}
+.footer .small{margin-top:.5rem}
+
+@media(max-width:900px){
+  .mega-panel{
+    grid-template-columns:repeat(2,1fr);
+    min-width:300px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="container">
+  <div class="header">
+
+    <a class="logo" href="index.html">
+      <img src="LogoUes.png">
+      <div>
+        <div class="site-title">Educación Ambiental - El Salvador</div>
+        <div class="site-sub">Conciencia · Acción · Comunidad</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <div class="mega">
+        <button class="nav-btn" id="megaBtn">Temas ▾</button>
+
+        <div class="mega-panel" id="megaPanel" style="display:none">
+
+          <a class="mega-link" href="index.html">Inicio</a>
+          <a class="mega-link" href="concepto.html">Educación Ambiental</a>
+          <a class="mega-link" href="problematica.html">Problemáticas</a>
+          <a class="mega-link" href="importancia.html">Importancia</a>
+          <a class="mega-link" href="legislacion.html">Legislación</a>
+          <a class="mega-link" href="rol_docente.html">Rol del Docente</a>
+          <a class="mega-link" href="estrategias.html">Estrategias</a>
+          <a class="mega-link" href="participacion.html">Participación Comunitaria</a>
+          <a class="mega-link" href="cambio_climatico.html">Cambio Climático</a>
+          <a class="mega-link" href="tic.html">TIC</a>
+          <a class="mega-link" href="sostenibilidad.html">ODS</a>
+          <a class="mega-link" href="marco_teorico.html">Marco Teórico</a>
+          <a class="mega-link" href="referencias.html">Referencias</a>
+
+        </div>
+      </div>
+
+      <a class="nav-btn" href="index.html">Inicio</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- CONTENT -->
+<main class="container">
+
+  <h1>Participación Comunitaria y Educación Ambiental</h1>
+
+  <img src="img8.png" class="hero-img">
+
+  <div class="card">
+
+    <h2>El papel de la comunidad en la sostenibilidad</h2>
+    <p class="small">
+      La participación comunitaria es esencial para construir un modelo de desarrollo sostenible.
+      Desde la década de los 80, múltiples enfoques han destacado que ninguna acción ambiental
+      será efectiva si no existe involucramiento directo de las comunidades.
+    </p>
+
+    <h2>Reflexiones clave</h2>
+    <ul class="small list">
+      <li><strong>Visión crítica del modelo económico:</strong> El desarrollo basado solo en ganancias ha provocado una crisis ambiental profunda.</li>
+      <li><strong>Nuevas relaciones sociedad-naturaleza:</strong> Se necesita pasar del antropocentrismo al biocentrismo.</li>
+      <li><strong>Ecología profunda:</strong> Promueve una visión integrada donde toda forma de vida tiene valor.</li>
+      <li><strong>Cooperación y redes:</strong> El cambio ecológico requiere colaboración entre actores locales, instituciones y ciudadanía.</li>
+      <li><strong>Transformación cultural:</strong> La sostenibilidad implica nuevos valores, comportamientos y modelos educativos.</li>
+    </ul>
+
+    <h2>Educación ambiental como motor de cambio</h2>
+    <p class="small">
+      La educación ambiental fortalece a la comunidad al promover conocimiento, identidad cultural,
+      compromiso ambiental y participación ciudadana activa. Su propósito es desarrollar capacidades
+      que orienten el desarrollo sostenible en contextos locales.
+    </p>
+
+    <h2>Retos de la participación comunitaria</h2>
+    <ul class="small list">
+      <li>Falta de acceso a información ambiental.</li>
+      <li>Desigualdad económica que limita la participación.</li>
+      <li>Baja organización comunitaria.</li>
+      <li>Débil articulación entre instituciones y actores sociales.</li>
+    </ul>
+
+    <h2>Oportunidades</h2>
+    <ul class="small list">
+      <li>Fortalecimiento de capacidades mediante talleres ambientales.</li>
+      <li>Inclusión de saberes locales e indígenas.</li>
+      <li>Participación activa en diagnósticos socioambientales.</li>
+      <li>Creación de comités locales de gestión ambiental.</li>
+    </ul>
+
+    <br>
+    <a href="index.html" class="btn-back">← Regresar</a>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="container footer">
+  <div class="small">
+    
+  </div>
+</footer>
+
+<script>
+// Mega menu toggle
+document.getElementById('megaBtn').addEventListener('click',()=>{
+  const p=document.getElementById('megaPanel');
+  p.style.display=p.style.display==='none'?'grid':'none';
+});
+document.addEventListener('click',e=>{
+  const b=document.getElementById('megaBtn');
+  const p=document.getElementById('megaPanel');
+  if(!b.contains(e.target)&&!p.contains(e.target)){
+    p.style.display='none';
+  }
+});
+</script>
+
+</body>
+</html>
